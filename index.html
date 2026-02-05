@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To Wifi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="scene">
+    <div class="envelope" aria-label="Envelope" id="envelope">
+      <!-- Back layer -->
+      <div class="envelope-back"></div>
+      
+      <!-- Letter (between back and front) -->
+      <div class="letter" id="letter" aria-live="polite">
+        <div class="letter-inner" id="letterInner">
+          <section class="letter-front">
+            <h4>Ik heb je dit al gevraagd maar,</h4>
+            <h1>Wil je mijn valentijn zijn?</h1>
+            <div class="buttons">
+              <button class="btn yes" id="yesBtn">Yes</button>
+            </div>
+          </section>
+          <section class="letter-back">
+            <h2>Voor de liefste meis op de hele wereld.</h2>
+            <p>
+               Sorry dat ik bij mijn vorige briefje niet zo romantisch was. Dus hier een briefje waar wat meer moeite in zit.
+               Ik heb je al vaak gezegd dat je de wereld verdient, maar ik denk dat het niet altijd duidelijk is wat ik daar exact mee bedoel.
+               In de woorden van Franz Kafka:</p>
+<p>"I can't think of any greater happiness than to be with you all the time, without interruption, endlessly."</p>
+            <p>
+               Jij bent het beste dat me ooit is overkomen en ik kan me het leven niet meer voorstellen zonder jou. 
+               Ik denk vaak dat ik graag alleen ben, 
+               maar als ik alleen ben merk ik dat ik eigenlijk alleen maar met jou wil zijn. 
+               Jij bent mijn wereld en mijn grootste avontuur.
+               Ik had voor niks beter kunnen wensen.
+            </p>
+            <p class="signature">— de echte stinky</p>
+          </section>
+        </div>
+      </div>
+      
+      <!-- Front layer with cutout -->
+      <div class="envelope-front">
+        <div class="to-text">to wifi</div>
+      </div>
+      
+      <!-- Ribbon -->
+      <div class="ribbon-wrapper">
+        <div class="ribbon-horizontal"></div>
+        <div class="ribbon-vertical"></div>
+        <button class="ribbon-bow" id="ribbon" aria-label="Pull the ribbon">
+          <span class="bow-loop left"></span>
+          <span class="bow-loop right"></span>
+          <span class="bow-center"></span>
+          <span class="bow-tail left"></span>
+          <span class="bow-tail right"></span>
+        </button>
+      </div>
+      
+      <!-- Flap layer -->
+      <button class="envelope-flap" id="flap" aria-label="Open envelope"></button>
+    </div>
+  </main>
+
+  <!-- No button - outside containers so it can move freely -->
+  <button class="btn no" id="noBtn">No</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
